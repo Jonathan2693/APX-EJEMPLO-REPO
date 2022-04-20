@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction xmlns="http://www.w3schools.com" transactionName="MNEOT001" application="MNEO" version="01" country="MX" language="ES">
+	<paramsIn>
+		<parameter order="1" name="entrada" mandatory="0" type="String" size="20"/>
+		<dto order="2" name="customersIn" mandatory="0" package="com.bbva.mneo.dto.customers.CustomersDTO" artifactId="MNEOC001">
+			<parameter order="1" name="customerId" mandatory="0" type="Long" size="10"/>
+			<parameter order="2" name="customerName" mandatory="0" type="String" size="50"/>
+			<parameter order="3" name="address" mandatory="0" type="String" size="50"/>
+			<parameter order="4" name="city" mandatory="0" type="String" size="50"/>
+			<parameter order="5" name="state" mandatory="0" type="String" size="25"/>
+			<parameter order="6" name="zipCode" mandatory="0" type="String" size="10"/>
+		</dto>
+	</paramsIn>
+	<paramsOut>
+		<dto order="1" name="customersOut" mandatory="0" package="com.bbva.mneo.dto.customers.CustomersDTO" artifactId="MNEOC001">
+			<parameter order="1" name="customerId" mandatory="0" type="Long" size="10"/>
+			<parameter order="2" name="customerName" mandatory="0" type="String" size="50"/>
+			<parameter order="3" name="address" mandatory="0" type="String" size="50"/>
+			<parameter order="4" name="city" mandatory="0" type="String" size="50"/>
+			<parameter order="5" name="state" mandatory="0" type="String" size="25"/>
+			<parameter order="6" name="zipCode" mandatory="0" type="String" size="10"/>
+		</dto>
+	</paramsOut>
+	<description>TRX para CRUD de customers</description>
+</transaction>
